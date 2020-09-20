@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">EmergenciAPP</string>
+    <string name="title_activity_registro2">Registro2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_registro3">Registro3</string>
+    <string name="title_activity_p_r_u_e_b">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="message">\"Se enviará una solicitud de asistencia para usted en \"</string>
+    <string-array name="tipos_afirmaciones">
+        <item>Sí</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="tipos_usuarios">
+        <item>Usuario general</item>
+        <item>Personal médico</item>
+        <item>Personal de enfermería</item>
+        <item>Primeros auxilios</item>
+    </string-array>
+    <string-array name="tipos_sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string-array name="niveles_conciencia">
+        <item>Normal</item>
+        <item>Confusión</item>
+        <item>Somnolencia</item>
+        <item>Inconsciencia</item>
+    </string-array>
+    <string-array name="grupos_sanguineos">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>0+</item>
+        <item>0-</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

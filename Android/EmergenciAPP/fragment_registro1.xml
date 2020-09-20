@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txtEmail_R_1"
+            android:layout_width="254dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="120dp"
+            android:autofillHints=""
+            android:background="@drawable/text_redondo"
+            android:drawableStart="@drawable/email"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtEmail_R_2"
+            android:layout_width="254dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:background="@drawable/text_redondo"
+            android:drawableStart="@drawable/email"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail_R_1" />
+
+        <EditText
+            android:id="@+id/txtPassword_R_1"
+            android:layout_width="254dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/text_redondo"
+            android:drawableStart="@drawable/candado"
+            android:drawableLeft="@drawable/candado"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail_R_2" />
+
+        <EditText
+            android:id="@+id/txtPassword_R_2"
+            android:layout_width="254dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:background="@drawable/text_redondo"
+            android:drawableStart="@drawable/candado"
+            android:drawableLeft="@drawable/candado"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword_R_1" />
+
+        <Spinner
+            android:id="@+id/selectTiposUsuarios_R"
+            android:layout_width="254dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/spinner_redondo"
+            android:dropDownWidth="match_parent"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="24dp"
+            android:paddingRight="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword_R_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

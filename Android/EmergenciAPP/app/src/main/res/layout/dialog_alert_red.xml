@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="textMultiLine|text"
+        android:text="¿Es usted quien necesita asistencia?"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:inputType="textMultiLine|text"
+        android:text="Se enviará una solicitud de asistencia para usted en 15 seg"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+    <Button
+        android:id="@+id/btn_avisoTerceros"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:onClick="avisoTerceros"
+        android:text="No" />
+
+</LinearLayout>

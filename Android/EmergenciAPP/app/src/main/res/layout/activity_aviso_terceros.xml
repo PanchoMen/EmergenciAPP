@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_top"
+        tools:context=".AvisoTerceros">
+
+
+    <TextView
+        android:id="@+id/txt_Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Complete los datos sobre el paciente"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LayoutNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo">
+
+        <TextView
+            android:id="@+id/txtNC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Nivel de consciencia"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/selectNivelC"
+            android:layout_width="260dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/spinner_redondo"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/niveles_conciencia"
+            android:paddingStart="12dp"
+            android:paddingEnd="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutPulso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutNC">
+
+        <TextView
+            android:id="@+id/txtPulso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="¿Presenta pulso?"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/selectPulso"
+            android:layout_width="260dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/spinner_redondo"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/tipos_afirmaciones"
+            android:paddingStart="12dp"
+            android:paddingEnd="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutRespira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutPulso">
+
+        <TextView
+            android:id="@+id/txtRespira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="¿Respira?"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/selectRespira"
+            android:layout_width="260dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/spinner_redondo"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/tipos_afirmaciones"
+            android:paddingStart="12dp"
+            android:paddingEnd="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutRespira">
+
+        <TextView
+            android:id="@+id/txtSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Sexo"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/selectSexo"
+            android:layout_width="260dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/spinner_redondo"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/tipos_sexo"
+            android:paddingStart="12dp"
+            android:paddingEnd="24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_redondo_red"
+        android:elevation="30dp"
+        android:onClick="enviar"
+        android:padding="10dp"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutSexo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

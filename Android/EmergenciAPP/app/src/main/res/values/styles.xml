@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorOnSurface">@color/gray</item>
+        <item name="colorError">@color/colorPrimary</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.ActionButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bottom"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmail_L"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Email"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:startIconDrawable="@drawable/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingTop="5dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPassword_L"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Contraseña"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_L"
+        app:startIconDrawable="@drawable/candado">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingTop="5dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btnSingup_L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToRegister"
+        android:text="¿Aún no tienes cuenta?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin_L" />
+
+    <Button
+        android:id="@+id/btnLogin_L"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_redondo_red"
+        android:elevation="30dp"
+        android:onClick="login"
+        android:padding="10dp"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkSesion" />
+
+    <CheckBox
+        android:id="@+id/checkSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Recordar credenciales"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword_L"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword_L" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
